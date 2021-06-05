@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class WelcomPage extends StatefulWidget {
-  WelcomPage({Key key}) : super(key: key);
+  WelcomPage({Key? key}) : super(key: key);
 
   @override
   _WelcomPageState createState() => _WelcomPageState();
