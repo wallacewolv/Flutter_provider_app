@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-// import 'package:lottie/lottie.dart';
+import 'package:lottie/lottie.dart';
 
 import 'package:flutter_verification_app/welcome/welcome_page.dart';
 
@@ -14,16 +14,16 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(
-      seconds: 4,
-    )).then(
-      (value) => Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => WelcomPage(),
-        ),
-      ),
-    );
+    // Future.delayed(Duration(
+    //   seconds: 8,
+    // )).then(
+    //   (value) => Navigator.pushReplacement(
+    //     context,
+    //     MaterialPageRoute(
+    //       builder: (context) => WelcomPage(),
+    //     ),
+    //   ),
+    // );
 
     return Scaffold(
       body: GestureDetector(
@@ -37,34 +37,34 @@ class _SplashPageState extends State<SplashPage> {
         },
         child: Container(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
-                padding: const EdgeInsets.only(bottom: 25),
+                padding: const EdgeInsets.only(top: 40),
                 child: Text(
                   "FLUTTER VERIFICATION",
                   style: GoogleFonts.architectsDaughter(
                     fontSize: 27,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF1766A7),
+                    color: Color(0xFF17A7A7),
                   ),
                 ),
               ),
-              Container(
-                  // child: Lottie.asset(
-                  //   "assets/animations/verification.json",
-                  // ),
+              Center(
+                child: Container(
+                  child: Lottie.asset(
+                    "assets/animations/verification.json",
                   ),
-              Padding(
-                padding: const EdgeInsets.only(
-                  top: 15,
                 ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 0),
                 child: Text(
                   "Tap to screen",
                   style: GoogleFonts.architectsDaughter(
-                    fontSize: 18,
-                    color: Color(0xFF1766A7),
+                    fontSize: 20,
+                    color: Color(0xFF17A7A7),
                   ),
                 ),
               ),
