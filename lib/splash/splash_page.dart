@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:lottie/lottie.dart';
+// import 'package:lottie/lottie.dart';
 
 import 'package:flutter_verification_app/welcome/welcome_page.dart';
 
@@ -15,7 +15,7 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     Future.delayed(Duration(
-      seconds: 2,
+      seconds: 4,
     )).then(
       (value) => Navigator.pushReplacement(
         context,
@@ -38,11 +38,12 @@ class _SplashPageState extends State<SplashPage> {
         child: Container(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsets.only(bottom: 25),
                 child: Text(
-                  "FLUTTER CRUD",
+                  "FLUTTER VERIFICATION",
                   style: GoogleFonts.architectsDaughter(
                     fontSize: 27,
                     fontWeight: FontWeight.bold,
@@ -51,10 +52,10 @@ class _SplashPageState extends State<SplashPage> {
                 ),
               ),
               Container(
-                child: Lottie.asset(
-                  'assets/animations/verification.json',
-                ),
-              ),
+                  // child: Lottie.asset(
+                  //   "assets/animations/verification.json",
+                  // ),
+                  ),
               Padding(
                 padding: const EdgeInsets.only(
                   top: 15,
