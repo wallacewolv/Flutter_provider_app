@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_verification_app/verfication/verification_page.dart';
 
 class RegisterPage extends StatefulWidget {
   RegisterPage({Key? key}) : super(key: key);
@@ -38,13 +39,11 @@ class _RegisterPageState extends State<RegisterPage> {
                 width: 200,
                 height: 200,
                 decoration: BoxDecoration(
-                  // color: Color(0xFF1686E0),
                   color: Colors.blue.shade50,
                   shape: BoxShape.circle,
                 ),
                 child: Image.asset(
                   "assets/images/mobile_register.png",
-                  // height: 450,
                 ),
               ),
               SizedBox(
@@ -125,7 +124,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         onPressed: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (context) => RegisterPage(),
+                              builder: (context) => VerificationPage(),
                             ),
                           );
                         },

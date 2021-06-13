@@ -14,17 +14,6 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
-    // Future.delayed(Duration(
-    //   seconds: 8,
-    // )).then(
-    //   (value) => Navigator.pushReplacement(
-    //     context,
-    //     MaterialPageRoute(
-    //       builder: (context) => WelcomPage(),
-    //     ),
-    //   ),
-    // );
-
     return Scaffold(
       body: GestureDetector(
         onTap: () {
@@ -41,7 +30,7 @@ class _SplashPageState extends State<SplashPage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 40),
+                padding: const EdgeInsets.only(top: 80, bottom: 0),
                 child: Text(
                   "FLUTTER VERIFICATION",
                   style: GoogleFonts.architectsDaughter(
@@ -55,11 +44,12 @@ class _SplashPageState extends State<SplashPage> {
                 child: Container(
                   child: Lottie.asset(
                     "assets/animations/mobile_verification.json",
+                    height: 400,
                   ),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 0),
+                padding: const EdgeInsets.only(bottom: 60),
                 child: Text(
                   "Tap to screen",
                   style: GoogleFonts.architectsDaughter(
