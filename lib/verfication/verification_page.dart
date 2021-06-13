@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class VerficationPage extends StatefulWidget {
-  const VerficationPage({Key? key}) : super(key: key);
+class VerificationPage extends StatefulWidget {
+  const VerificationPage({Key? key}) : super(key: key);
 
   @override
-  _VerficationPageState createState() => _VerficationPageState();
+  _VerificationPageState createState() => _VerificationPageState();
 }
 
-class _VerficationPageState extends State<VerficationPage> {
+class _VerificationPageState extends State<VerificationPage> {
   @override
   Widget build(BuildContext context) {
     return Container(

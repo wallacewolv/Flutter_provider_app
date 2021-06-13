@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_verification_app/register/register_page.dart';
+import 'package:flutter_verification_app/verfication/verification_page.dart';
 
 class WelcomPage extends StatefulWidget {
   WelcomPage({Key? key}) : super(key: key);
@@ -52,12 +54,18 @@ class _WelcomPageState extends State<WelcomPage> {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => RegisterPage(),
+                      ),
+                    );
+                  },
                   style: ButtonStyle(
                     foregroundColor:
                         MaterialStateProperty.all<Color>(Colors.white),
                     backgroundColor:
-                        MaterialStateProperty.all<Color>(Color(0xFF0FCC6D)),
+                        MaterialStateProperty.all<Color>(Color(0xFF1686E0)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(24),
@@ -82,10 +90,16 @@ class _WelcomPageState extends State<WelcomPage> {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => VerificationPage(),
+                      ),
+                    );
+                  },
                   style: ButtonStyle(
                     foregroundColor:
-                        MaterialStateProperty.all<Color>(Color(0xFF0FCC6D)),
+                        MaterialStateProperty.all<Color>(Color(0xFF1686E0)),
                     backgroundColor:
                         MaterialStateProperty.all<Color>(Colors.black),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(

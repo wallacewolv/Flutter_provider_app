@@ -47,14 +47,14 @@ class _SplashPageState extends State<SplashPage> {
                   style: GoogleFonts.architectsDaughter(
                     fontSize: 27,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF17A7A7),
+                    color: Color(0xFF1686E0),
                   ),
                 ),
               ),
               Center(
                 child: Container(
                   child: Lottie.asset(
-                    "assets/animations/verification.json",
+                    "assets/animations/mobile_verification.json",
                   ),
                 ),
               ),
@@ -64,7 +64,8 @@ class _SplashPageState extends State<SplashPage> {
                   "Tap to screen",
                   style: GoogleFonts.architectsDaughter(
                     fontSize: 20,
-                    color: Color(0xFF17A7A7),
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF1686E0),
                   ),
                 ),
               ),

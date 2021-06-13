@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_verification_app/splash/splash_page.dart';
-import 'package:flutter_verification_app/welcome/welcome_page.dart';
+import 'package:flutter_verification_app/splash/splash_page.dart';
 
 class AppWidget extends StatelessWidget {
   @override
@@ -8,7 +7,7 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Flutter verification",
-      home: WelcomPage(),
+      home: SplashPage(),
     );
   }
 }
